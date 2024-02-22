@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-// NAME: Ojeyinka Ifeoluwa Samuel
-// MATRIC N0: 2022/42315
-// DEPT: Information Technology
+// NAME: Ojeyinka Emmanuel
+// MATRIC N0: 2022/40970
+// DEPT: Computer Science
 
 int main(){
     int year;
