@@ -2,36 +2,35 @@
 /*marks<40 F 40 <= 45 E 45 <= 49 D 49 <= 59 C 60 <= 69 B 70 <= 100 A */
 
 #include <stdio.h>
-#include <stdlib.h>
 
 int main()
 {
-    char grade;
+    double mark;
 
     printf("Enter your score: ");
-    scanf("%d", &grade);
+    scanf("%lf", &mark);
 
-    if (grade < 40)
+    if (mark < 0 || mark > 100)
+    {
+        printf("Invalid score");
+    }
+    else if (mark >= 0 && mark <= 39)
     {
         printf("You got F");
     }
-    else if (grade >= 40 && grade < 45)
+    else if (mark >= 40 && mark < 45)
     {
         printf("You got E");
     }
-    else if (grade >= 45 && grade < 49)
+    else if (mark >= 45 && mark < 49)
     {
         printf("You got D");
     }
-    else if (grade >= 49 && grade < 60)
+    else if (mark >= 49 && mark < 60)
     {
         printf("You got C");
     }
-    else if (grade >= 60 && grade < 70)
-    {
-        printf("You got B");
-    }
-    else if (grade >= 60 && grade < 70)
+    else if (mark >= 60 && mark < 70)
     {
         printf("You got B");
     }
